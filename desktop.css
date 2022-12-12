@@ -76,6 +76,25 @@ span.bulletinText a {
     text-decoration: none;
 }
 
+#copyrightBoxMobile {
+    display: none;
+}
+
+span.copyrightMobile {
+    display: none;
+}
+
+#copyrightBoxDesktop {
+    border-radius: 25px;
+    min-width: 600px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 49;
+}
+
 span.copyrightDesktop {
     font-family: 'Source Code Pro', monospace;
     font-weight: 300;
@@ -91,7 +110,7 @@ span.copyrightDesktop {
 
 /* ### Big Graphics ### */
 .background {
-    min-height: 100px;          /* top three lines are flexbox */
+    min-height: 1080px;          /* top three lines are flexbox */
     display: inline-flex;
     align-items: center; 
     margin: 0;
@@ -102,4 +121,8 @@ span.copyrightDesktop {
     transform: translate(-50%, -50%);
     opacity: .45;
     z-index: 2;
+}
+
+.backgroundMobile {
+    display: none;
 }
