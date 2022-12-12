@@ -117,9 +117,15 @@ span.copyrightDesktop {
 }
 
 .backgroundMobile { 
-    display: flex;
-    justify-content: center;
+    min-height: 1000px;          /* top three lines are flexbox */
+    display: inline-flex;
+    align-items: center; 
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: .45;
     z-index: 2;
-    overflow: hidden;
 }
