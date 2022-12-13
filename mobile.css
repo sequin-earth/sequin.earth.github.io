@@ -38,6 +38,7 @@ span.bulletinText {
     color: #ffffff;
     opacity: 1;
     font-family: 'Source Code Pro', monospace;
+    font-size: 150%;
     text-align: center;
     margin: 0;
     z-index: 6;
