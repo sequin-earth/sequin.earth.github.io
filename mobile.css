@@ -14,39 +14,9 @@ p.light {
     font-weight: 300;
 }
 
-#bulletinBoxBackground {
-    border-radius: 25px;
-    background: #808080;
-    opacity: .3;
-    padding: 20px;
-    min-width: 100px;
-    max-width: 450px;
-    min-height: 100px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
-    z-index: 3;
-}
-
-span.bulletinTextBackground {
-    display: inline-block;
-    color: #808080;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 150%;
-    text-align: center;
-    margin: 0;
-    user-select: none;
-    z-index: 4;
-}
-
-span.bulletinTextBackground a {
-    color: #808080;
-    font-weight: 400;
-    text-decoration: none;
-    user-select: none;
+.bulletinBoxOpacity {
+    background: rgb(128, 128, 128); /* Why are you using a browser that doesn't suppoer RGBa? */
+    background: rgba(128, 128, 128, .3)
 }
 
 #bulletinBox {
@@ -66,8 +36,8 @@ span.bulletinTextBackground a {
 span.bulletinText {
     display: inline-block;
     color: #ffffff;
+    opacity: 1;
     font-family: 'Source Code Pro', monospace;
-    font-size: 150%;
     text-align: center;
     margin: 0;
     z-index: 6;
