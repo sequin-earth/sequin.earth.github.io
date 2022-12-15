@@ -1,3 +1,2 @@
 User-agent: *
 Disallow: ./media/backgrounds/
-Disallow: ./media/logo/
