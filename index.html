@@ -29,7 +29,22 @@
             <span class='bulletinText'>
                 <p class='heavy'>Thank you for checking in on sequin.earth!</p>
                 <p class='light'>We're currently under active development. If you've been given demo access, please visit <a href='https://login.demo.sequin.earth/'>login.demo.sequin.earth</a>.</p>
-                <p class='light'>For inquiries, please email us at <a href='mailto:product@sequin.earth'>product@sequin.earth</a>.</p>
+                <p class='light'>For inquiries, please <br>
+                    <script type="text/javascript">
+                        function decode(a) {
+                        return a.replace(/[a-zA-Z]/g, function(c){
+                            return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) 
+                                                    ? c : c - 26);
+                        })
+                        }; 
+                        function openMailer(element) {
+                        var y = decode("znvygb:cebqhpg@frdhva.rnegu");
+                        element.setAttribute("href", y);
+                        element.setAttribute("onclick", "");
+                        element.firstChild.nodeValue = "drop me a message";
+                        };
+                    </script>
+                    <a id="email" href=" " onclick='openMailer(this);'>drop me a message</a></body>.</p>
             </span>
         </div>
         <!-- Copyright for desktop size site-->
