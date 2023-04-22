@@ -13,6 +13,10 @@ p.light {
     font-weight: 300;
 }
 
+.emphasize {
+    font-weight: 600;
+}
+
 .bulletinBoxOpacity {
     background: rgb(128, 128, 128); /* Why are you using a browser that doesn't suppoer RGBa? */
     background: rgba(128, 128, 128, .3)
