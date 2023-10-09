@@ -208,6 +208,7 @@
     span.copyrightMobile {
         font-family: 'Source Code Pro', monospace;
         font-weight: 300;
+        font-size: 50%;
         color: #808080;
         margin: 0;
         position: absolute;
