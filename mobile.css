@@ -1,125 +1,255 @@
-/* ### Page Settings ### */
-body {
-    background-color: #000000;
-    overflow: hidden;
-    margin: 0;
+@media (orientation: portrait) {
+    /* ### Page Settings ### */
+    body {
+        background-color: #000000;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    /* ### Text ### */
+    p.heavy {
+        font-weight: 600;
+    }
+
+    p.light {
+        font-weight: 300;
+    }
+
+    .emphasize {
+        font-weight: 600;
+    }
+
+    #bigWrapper {
+        position: absolute;
+        width: 100%;
+        min-height: 10%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 4;
+    }
+
+    .bulletinBoxOpacity {
+        background: rgb(128, 128, 128); /* Why are you using a browser that doesn't suppoer RGBa? */
+        background: rgba(128, 128, 128, .3)
+    }
+
+    #bulletinBox {
+        border-radius: 25px;
+        /*background: #808080;
+        opacity: .3;*/
+        padding: 20px;
+        min-width: 100px;
+        max-width: 550px;
+        min-height: 100px;
+        margin: 0;
+        z-index: 5;
+    }
+
+    span.bulletinText {
+        display: inline-block;
+        color: #ffffff;
+        opacity: 1;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 150%;
+        text-align: center;
+        margin: 0;
+        z-index: 6;
+    }
+
+    span.bulletinText a {
+        color: #d80000; /*Alt color choice: #d88200*/
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    #copyrightBoxMobile {
+        border-radius: 25px;
+        min-width: 1000px;
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 49;
+    }
+
+    span.copyrightMobile {
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 300;
+        color: #808080;
+        margin: 0;
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 50;
+    }
+
+    #copyrightBoxDesktop {
+        display: none;
+    }
+
+    span.copyrightDesktop {
+        display: none;
+    }
+
+    /* ### Big Graphics ### */
+    .background {
+        display: none;
+    }
+
+    .backgroundMobile { 
+        min-height: 1000px;          /* top three lines are flexbox */
+        display: inline-flex;
+        align-items: center; 
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: .45;
+        z-index: 2;
+    }
+
+    #Github {
+        width: 55px; 
+        height: 55px;
+        margin: 0;
+        padding-top: 10px;
+        z-index: 5;
+    }
 }
 
-/* ### Text ### */
-p.heavy {
-    font-weight: 600;
-}
+@media (orientation: landscape) {
+    /* ### Page Settings ### */
+    body {
+        background-color: #000000;
+        overflow: hidden;
+        margin: 0;
+    }
 
-p.light {
-    font-weight: 300;
-}
+    /* ### Text ### */
+    p.heavy {
+        font-weight: 600;
+    }
 
-.emphasize {
-    font-weight: 600;
-}
+    p.light {
+        font-weight: 300;
+    }
 
-#bigWrapper {
-    position: absolute;
-    width: 100%;
-    min-height: 10%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 4;
-}
+    .emphasize {
+        font-weight: 600;
+    }
 
-.bulletinBoxOpacity {
-    background: rgb(128, 128, 128); /* Why are you using a browser that doesn't suppoer RGBa? */
-    background: rgba(128, 128, 128, .3)
-}
+    #bigWrapper {
+        position: absolute;
+        width: 100%;
+        min-height: 10%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 4;
+    }
 
-#bulletinBox {
-    border-radius: 25px;
-    /*background: #808080;
-    opacity: .3;*/
-    padding: 20px;
-    min-width: 100px;
-    max-width: 450px;
-    min-height: 100px;
-    margin: 0;
-    z-index: 5;
-}
+    .bulletinBoxOpacity {
+        background: rgb(128, 128, 128); /* Why are you using a browser that doesn't suppoer RGBa? */
+        background: rgba(128, 128, 128, .3)
+    }
 
-span.bulletinText {
-    display: inline-block;
-    color: #ffffff;
-    opacity: 1;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 150%;
-    text-align: center;
-    margin: 0;
-    z-index: 6;
-}
+    #bulletinBox {
+        border-radius: 25px;
+        /*background: #808080;
+        opacity: .3;*/
+        padding: 20px;
+        min-width: 100px;
+        max-width: 750px;
+        min-height: 100px;
+        margin: 0;
+        z-index: 5;
+    }
 
-span.bulletinText a {
-    color: #d80000; /*Alt color choice: #d88200*/
-    font-weight: 400;
-    text-decoration: none;
-}
+    span.bulletinText {
+        display: inline-block;
+        color: #ffffff;
+        opacity: 1;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 100%;
+        text-align: center;
+        margin: 0;
+        z-index: 6;
+    }
 
-#copyrightBoxMobile {
-    border-radius: 25px;
-    min-width: 1000px;
-    margin: 0;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 49;
-}
+    span.bulletinText a {
+        color: #d80000; /*Alt color choice: #d88200*/
+        font-weight: 400;
+        text-decoration: none;
+    }
 
-span.copyrightMobile {
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 300;
-    color: #808080;
-    margin: 0;
-    position: absolute;
-    text-align: center;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    z-index: 50;
-}
+    #copyrightBoxMobile {
+        border-radius: 25px;
+        min-width: 1000px;
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 49;
+    }
 
-#copyrightBoxDesktop {
-    display: none;
-}
+    span.copyrightMobile {
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 300;
+        color: #808080;
+        margin: 0;
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 50;
+    }
 
-span.copyrightDesktop {
-    display: none;
-}
+    #copyrightBoxDesktop {
+        display: none;
+    }
 
-/* ### Big Graphics ### */
-.background {
-    display: none;
-}
+    span.copyrightDesktop {
+        display: none;
+    }
 
-.backgroundMobile { 
-    min-height: 1000px;          /* top three lines are flexbox */
-    display: inline-flex;
-    align-items: center; 
-    margin: 0;
-    position: absolute;
-    bottom: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: .45;
-    z-index: 2;
-}
+    /* ### Big Graphics ### */
+    .background {
+        display: none;
+    }
 
-#Github {
-    width: 55px; 
-    height: 55px;
-    margin: 0;
-    padding-top: 10px;
-    z-index: 5;
+    .backgroundMobile { 
+        min-height: 1000px;          /* top three lines are flexbox */
+        display: inline-flex;
+        align-items: center; 
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+        opacity: .45;
+        z-index: 2;
+    }
+
+    #Github {
+        width: 55px; 
+        height: 55px;
+        margin: 0;
+        padding-top: 10px;
+        z-index: 5;
+    }
 }
